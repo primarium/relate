@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+    form(name="add-note", action="/note/add", method="post")
+        input(type="text", name="title", placeholder="Title")
+        input(type="text", name="content", placeholder="Enter Note Here")
+        input(type="submit",value="Add Note")

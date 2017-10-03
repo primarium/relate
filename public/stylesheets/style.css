@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.genTable th{
+  padding-right:.25em;
+}
+.tableMods{
+  padding-right:.25em;
+  text-decoration: none;
+}
+.navTopBar a{
+  padding-right: .5em;
+  text-decoration: none;
+}

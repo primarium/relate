@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  h1 Things
+  a(href="/thing/add") Add Thing
+  div.genTable
+    table
+      tr
+        th Title
+        th Content
+        th Modifiers
+        each thing in things
+          tr
+            td 
+                = thing.name
+            td
+                = thing.description
+            td 
+              a(href="/thing/edit").tableMods Edit
+              a(href="/thing/remove/"+thing.id).tableMods Remove

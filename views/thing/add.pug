@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+    form(name="add-thing", action="/thing/add", method="post")
+        input(type="text", name="name", placeholder="Name")
+        input(type="text", name="description", placeholder="Describe it!")
+        input(type="submit",value="Add Thing")

@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navTopBar
+      a(href='/person') People
+      a(href='/place') Places
+      a(href='/note') Notes
+      a(href='/thing') Things
+      //- a(href='/Happening') Happening
+    block content

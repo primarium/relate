@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  h1 Places
+  a(href="/place/add") Add Place
+  div.genTable
+    table
+      tr
+        th Name
+        th Description
+        th Street Address
+        th City
+        th State
+        th Country
+        th Modifiers
+        each place in places
+          tr
+            td 
+                = place.name
+            td
+                = place.description
+            td
+                = place.strAddress
+            td
+                = place.city
+            td
+                = place.stateProv
+            td
+                = place.country
+            td 
+              a(href="/place/edit").tableMods Edit
+              a(href="/place/remove/"+place.id).tableMods Remove

@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+  h1 People
+  a(href="/person/add") Add Person
+  div.genTable
+    table
+      tr
+        th First Name
+        th Last Name
+        th Description
+        th Date Added
+        th Modifiers
+        each person in people
+          tr
+            td 
+              = person.fName
+            td
+              = person.lName
+            td
+              = person.description
+            td
+              = person.createdAt
+            td 
+              a(href="/person/edit").tableMods Edit
+              a(href="/person/remove/"+person.id).tableMods Remove

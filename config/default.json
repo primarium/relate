@@ -1,0 +1,9 @@
+{
+    "DBSettings":{
+        "host":"localhost",
+        "dialect":"mysql",
+        "database":"relate",
+        "username":"relate_admin",
+        "password":"testpassword"
+    }
+}

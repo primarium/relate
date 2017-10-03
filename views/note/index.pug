@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  h1 Notes
+  a(href="/note/add") Add Note
+  div.genTable
+    table
+      tr
+        th Title
+        th Content
+        th Modifiers
+        each note in notes
+          tr
+            td 
+                = note.title
+            td
+                = note.content
+            td 
+              a(href="/note/edit").tableMods Edit
+              a(href="/note/remove/"+note.id).tableMods Remove

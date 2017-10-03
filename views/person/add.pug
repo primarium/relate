@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+    form(name="add-person", action="/person/add", method="post")
+        input(type="text", name="fName", placeholder="First Name")
+        input(type="text", name="lName", placeholder="Last Name")
+        input(type="text", name="description", placeholder="Write a basic Description")
+        input(type="submit",value="Add Person")
